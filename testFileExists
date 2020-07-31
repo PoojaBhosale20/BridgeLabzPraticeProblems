@@ -1,0 +1,9 @@
+read -p "Enter file name:"filename
+if test -f "$filename"; then
+echo "$filename exists."
+else
+cat $filename;
+echo $filename created;
+fi
+
+
